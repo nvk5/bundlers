@@ -1,0 +1,54 @@
+// .webp .page__body {
+//     background: url('../images/webp/header.webp');
+// }
+
+// .no-webp .page__body {
+//     background: url('../images/header.png');
+// }
+
+.page {
+    font-size: var(--fsz-main);
+
+    &__body {
+        position: relative;
+        overflow-x: hidden;
+        font-family: var(--ff-main), Arial, Helvetica, sans-serif;
+        line-height: var(--lh-main);
+        color: var(--color-text);
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    display: block;
+}
+
+.button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+}
+
+.nav__list, ul {
+    list-style: none
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,14 @@
+//Clearfix mixin
+@mixin clearfix {
+	&:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+}
+
+// Px to rem
+@function rem($size) {
+  @return $size / $root-font-size * 1rem;
+}
+

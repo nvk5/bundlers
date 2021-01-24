@@ -1,0 +1,20 @@
+@import './libs/libs';
+
+:root {
+    --main-color: linear-gradient(0deg, violet, pink);
+}
+
+body {
+    background: var(--main-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    clip-path: circle(50px at 50px 50px);
+}

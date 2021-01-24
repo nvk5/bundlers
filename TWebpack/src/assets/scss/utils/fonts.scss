@@ -1,0 +1,10 @@
+@mixin font-face($f-name, $f-style, $f-weight, $file-path) {
+    @font-face {
+        font-family: $f-name;
+        font-style: $f-style;
+        font-weight: $f-weight;
+        src: url('#{$file-path}.woff2') format('woff2'), url('#{$file-path}.woff') format('woff')
+    }	
+}
+
+// @include font-face('GothamProRegular', normal, 400,  '../fonts/GothamProRegular/GothamProRegular');
